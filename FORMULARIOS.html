@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+    
+    <center>
+        <h1>FORMULARIOS</h1><hr  color="BLUE">
+    </center>
+    <form action="index.php" method="get" enctype="text/plain">
+
+
+<table border="" width="90%" style="margin: auto;" cellsapcing="0">
+    <tr align="center">
+        <td>NOMBRE</td>
+        <td>DESCRIPCION</td>
+        <td>EJEMPLO</td>
+    </tr>
+    <tr>
+        <td>CAMPO DE TEXTO</td>
+        <td>Sirve para recipilar informacion/para asignar un maximo de caracteres</td>
+        <td> <input type="text" name="nombre" id="nombre" placeholder="Introduce un nombre"></td>
+        <td> <input type="text" name="nombre" id="nombre" placeholder="Introduce un nombre" required value="RENE" maxlength="10"></td>
+
+    </tr>
+    <tr>
+        <td>CAMPO DE CONTRASEÑA</td>
+        <td>Ocultar los caracteres cuando escribes</td>
+        <td><input type="password" name="password" id="password" placeholder="Introduce contraseña" required></td>
+    </tr>
+    <tr>
+        <td>CAMPO DE VERIFICACION</td>
+        <td>Sirve para verificar alguna opcion o resultado</td>
+        <td> <input type="checkbox"> <input type="checkbox" checked></td>
+    </tr>
+    <tr>
+        <td>BOTON RADIO</td>
+        <td>Da la accion de seleccionar una sola opcion de las indicadas </td>
+        <td> <input type="radio" name="escuelas" id="boton1"> CECYTEM</input><br>
+            <input type="radio" name="escuelas" id="boton1"> CONALEP</input><br>
+            <input type="radio" name="escuelas" id="boton1"> CBT</input></td><br>
+        
+    </tr>
+    <tr>
+        <td>CAMPO OCULTO</td>
+        <td>Ocultar los caracteres que solo el programador observara</td>
+        <td><input type="hidden" name="oculto" id="osulto" value="Mi contrasela es:123456"></td>
+    </tr>
+    <tr>
+        <td>AREA DE TEXTO</td>
+        <td>Permite escribir la cantidad de caracteres que necesites</td>
+        <td><input type="text" id="texto" cols="30" rows="30" ></td>
+    </tr>
+    <tr>
+        <td>LISTA DESPLEGABLE</td>
+        <td>Permite colocar opciones mediante una lista estructurada</td>
+        <td>
+            <select name="lista" id="lista">
+                <option value="SAUL">SAUL</option>
+                <option value="JOSE">JOSE</option>
+                <option value="BRUNO">BRUNO</option>
+                <option value="LAEL">LAEL</option>
+                <option value="MENORCITO">MENORCITO</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>BOTON ENVIAR</td>
+        <td>EL BOTON MAS IMPORTANTE PARA RECUPERAR TODA LA INFORMACION</td>
+        <td><input type="submit" value="Enviar"></td>
+    </tr>
+    <tr>
+        <td>BOTON IMAGEN</td>
+        <td>Da funcionalidad a una imagen para que funcione lo mas similar a un boton</td>
+        <td><input type="image" src="logo.jpg"></td>
+    </tr>
+    <tr>
+        <td>BOTON BORRAR</td>
+        <td>Reseteara o eliminara toda la informacion anteriormente colocada</td>
+        <td><input type="reset" value="Borrar"></td>
+    </tr>
+
+
+
+
+    <tr>
+        <td>BOTON COLOR</td>
+        <td>Otorga la accion de seleccionar un color preferido</td>
+        <td><input type="color" ></td>
+    </tr>
+    <tr>
+        <td>BOTON COMANDO</td>
+        <td>Boton el cual se puede diseñar y dar una propia funcionalidad</td>
+        <td><input type="button" value="ACEPTAR" ></td>
+    </tr>
+    <tr>
+        <td>CAMPO FECHA</td>
+        <td>Permite colocar una fecha estruturada por dia, mes y año</td>
+        <td><input type="date"  ></td>
+    </tr>
+    <tr>
+        <td>FECHA Y HORA</td>
+        <td>Ayuda a colocar fecha y hora(obsoleto)</td>
+        <td><input type="datetime" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>FECHA Y HORA LOCAL</td>
+        <td>Permite colocar la fecha por dia,mes y año al igual que la hora del dia</td>
+        <td><input type="datetime-local" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>EMAIL</td>
+        <td>Validara que entre los caracteres se encuentre un @ </td>
+        <td><input type="email" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>CAMPO ARCHIVO</td>
+        <td>Permitira que subas un archivo a la pagina desde tu almacenamiento</td>
+        <td><input type="file" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>MES DEL AÑO</td>
+        <td>Colocara mes y año actual </td>
+        <td><input type="month" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>CAMPO NUMERICO</td>
+        <td>Permite colocar y seleccionar un numero entero</td>
+        <td><input type="number" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>CAMPO NUMERICO DETERMIADO</td>
+        <td>Permite colocar y seleccionar un numero decimal o enetro establecido</td>
+        <td><input type="number" step="0.5" value="0" ></td>
+    </tr>
+    <tr>
+        <td>SLIDER</td>
+        <td>Permite seleccionar una cantidad por medio de una barra interactiva</td>
+        <td><input type="range" name="" id="" value="0" min="0" max="100"></td>
+    </tr>
+    <tr>
+        <td>CAMPO BUSQUEDA</td>
+        <td>Ayuara a realizar busquedas dentro de la misma pagina</td>
+        <td><input type="search" ></td>
+    </tr>
+    <tr>
+        <td>CAMPO TELEFONO</td>
+        <td>Para colocar numeros telefonicos solamente</td>
+        <td><input type="tel" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>CAMPO HORA</td>
+        <td>Sirve para colocar y seleccionar una hora</td>
+        <td><input type="time" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>CAMPO URL</td>
+        <td>Para colocar unicamente caracteres que conformen una URL de una pagina</td>
+        <td><input type="url" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>CAMPO SEMANA</td>
+        <td>Permitira selecionar y motrar en que semana del año vamos</td>
+        <td><input type="week" name="" id="" ></td>
+    </tr>
+    <tr>
+        <td>LISTA OCULTA</td>
+        <td>Servira como un autocompletado con informacion ya definida</td>
+        <td><input list="Paises" type="text" ></td>
+        <datalist id="Paises">
+            <option value="Mexico"></option>
+            <option value="Salvador"></option>
+            <option value="Brasil"></option>
+            <option value="España"></option>
+            <option value="USA"></option>
+        </datalist>
+    </tr>
+    <tr>
+        <td>BARRA DE PROGRESO</td>
+        <td>Permite colocar que porsentaje de progreso lleva una accion o informacion</td>
+        <td><progress id="file" max="110" value="70">70%</progress></td>
+    </tr>
+    <tr>
+        <td>ESTETICO</td>
+        <td>Otorga una mejor estetica a un formulario al igual que a su llenado</td>
+        <td>
+            <fieldset>
+                <legend>Información Personal</legend>
+                Nombre: <input name='nombre' type='text' tabindex='1'>
+                Apellidos: <input name='apellidos' type='text' tabindex='2'>
+               </fieldset>
+              
+               <fieldset>
+                <legend>edad</legend>
+                <input type='checkbox' tabindex='20'
+                          name='edad' value='20-39' > 20-39
+                <input type='checkbox' tabindex='21'
+                          name='edad' value='40-59' > 40-59
+                <input type='checkbox' tabindex='22'
+                          name='edad' value='60-79' > 60-79
+               </fieldset>
+        </td>
+    </tr>
+</table>
+
+    </form>
